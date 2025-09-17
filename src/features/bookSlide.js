@@ -4,7 +4,7 @@ const initialState = {
   books: [
     {
       id: 1,
-      title: "The Great Gatsby",
+      title: "The Great Mehedi Hasan",
       author: "F. Scott Fitzgerald",
       price: 9.99,
       quantity: 5,
