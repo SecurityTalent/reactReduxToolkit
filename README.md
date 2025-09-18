@@ -3,7 +3,7 @@
 A simple React + Redux Toolkit app for managing a list of books.  
 It demonstrates how to add, edit, and delete books using Redux Toolkit for state management.
 
----
+
 ## Project Structure
 ```js
 react-redux-booklist/
@@ -27,9 +27,6 @@ react-redux-booklist/
 └─ README.md
 ```
 
-
----
-
 ## ✨ Features
 
 - ➕ **Add new books** (Title, Author, Price, Quantity)
@@ -38,7 +35,7 @@ react-redux-booklist/
 - 🖥️ **Clean UI** with styled form and list
 - ⚛️ **Redux Toolkit** for simplified state management
 
----
+
 
 ## 📝 Form Fields
 
@@ -49,10 +46,10 @@ react-redux-booklist/
 | **Price**  | Price of the book (e.g. 9.99)  |
 | **Quantity** | Number of copies available   |
 
----
+
 
 ## 🖼️ UI Preview
-![Book List App Screenshot](./screenshot.png)
+![Book List App Screenshot](https://raw.githubusercontent.com/SecurityTalent/reactReduxToolkit/refs/heads/main/Screenshot.png)
 
 ## Usage
 To run this project, install the dependencies and start the development server:
