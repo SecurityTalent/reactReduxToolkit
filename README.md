@@ -61,7 +61,7 @@ npm start
 Open your browser and navigate to:
 
 ```js
-    http://localhost:3000
+http://localhost:3000
 ```
 
 ## 📝 License
