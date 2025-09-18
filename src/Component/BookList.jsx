@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { deleteBook } from "../features/bookSlide";
 
 
-function BookList() {
+function BookList({onHandelEdit}) {
   const books = useSelector((state) => state.booksR.books);
   const dispatch = useDispatch();
 
@@ -10,7 +10,15 @@ function BookList() {
     dispatch(deleteBook(id));
     console.log(id)
   };
+  const handelEdit = (book) => {
+    onHandelEdit(book);
+  };
 
+  const handelonCancelEdit = (book) => {
+    onHandelEdit(null);
+  };
+
+  
   return (
     <>
       <h1>List of books</h1>
@@ -20,6 +28,7 @@ function BookList() {
             <li>
               {book.title} - {book.author} ${book.price} {book.quantity} &nbsp;
               <button onClick={() => handelClick(book.id)}>Delete</button>
+              <button onClick={() => handelEdit(book)}>Edit Book</button>
             </li>
           </ul>
         ))
