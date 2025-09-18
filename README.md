@@ -1,12 +1,72 @@
-# React + Vite
+# 📚 React Redux Toolkit – Book List Form App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React + Redux Toolkit app for managing a list of books.  
+It demonstrates how to add, edit, and delete books using Redux Toolkit for state management.
 
-Currently, two official plugins are available:
+---
+## Project Structure
+```js
+react-redux-booklist/
+│
+├─ public/
+│   └─ index.html
+│
+├─ src/
+│   ├─ components/
+│   │   ├─ BookForm.js        
+│   │   └─ BookList.js        
+│   │
+│   ├─ redux/
+│   │   ├─ store.js           
+│   │   └─ booksSlice.js      
+│   │
+│   ├─ App.js                
+│   └─ index.js              
+│
+├─ package.json
+└─ README.md
+```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Features
+
+- ➕ **Add new books** (Title, Author, Price, Quantity)
+- ✏️ **Edit existing books** directly in the form
+- 🗑️ **Delete books** from the list
+- 🖥️ **Clean UI** with styled form and list
+- ⚛️ **Redux Toolkit** for simplified state management
+
+---
+
+## 📝 Form Fields
+
+| Field      | Description                    |
+|------------|--------------------------------|
+| **Title**  | Book name/title                |
+| **Author** | Author of the book             |
+| **Price**  | Price of the book (e.g. 9.99)  |
+| **Quantity** | Number of copies available   |
+
+---
+
+## 🖼️ UI Preview
+![Book List App Screenshot](./screenshot.png)
+
+## Usage
+To run this project, install the dependencies and start the development server:
+
+```bash
+npm install
+npm start
+```
+Open your browser and navigate to:
+
+```js
+    http://localhost:3000
+```
+
+## 📝 License
+
+This project is licensed under the [MIT License](LICENSE).
